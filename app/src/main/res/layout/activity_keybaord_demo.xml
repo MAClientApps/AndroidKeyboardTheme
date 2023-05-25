@@ -1,0 +1,255 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLt"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgView9"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/back_round_edge_corner"
+        android:src="@drawable/keylogo" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView9"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingClass">
+
+        <LinearLayout
+            android:id="@+id/layout_EnableKeyBoard"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/key_round_edge_corner"
+            android:minWidth="@dimen/button_minWidth"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgView1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_keyboard_48dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/enable_settings_txtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enable_in_settings"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_layout_ChooseInput"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/input_round_edge_corner"
+            android:minWidth="@dimen/button_minWidth"
+            android:orientation="vertical"
+            android:padding="10dp"
+            ads:layout_constraintRight_toLeftOf="@+id/layout_SelectLanguages"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toBottomOf="@+id/layout_EnableKeyBoard">
+
+            <ImageView
+                android:id="@+id/imgView3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_create_48dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/set_input_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/choose_input_method"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_SelectTheme"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/themes_round_edge_corner"
+            android:minWidth="@dimen/button_minWidth"
+            android:orientation="vertical"
+            android:padding="10dp"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintTop_toBottomOf="@+id/layout_SelectLanguages">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_palette_48dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/choose_theme_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/choose_theme"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingClass">
+
+        <LinearLayout
+            android:id="@+id/layout_ManageDictionary"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/dictionary_round_edge_corner"
+            android:minWidth="@dimen/button_minWidth"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_dictionary_48"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/manage_dictionary_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dictionaries"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_SelectLanguages"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/language_round_edge_corner"
+            android:minWidth="@dimen/button_minWidth"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_language_48dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/add_languages_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/add_languages"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_layout_about"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.2"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/about_round_edge_corner"
+            android:minWidth="@dimen/button_minWidth"
+            android:orientation="vertical"
+            android:padding="10dp"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintTop_toBottomOf="@+id/layout_SelectTheme">
+
+            <ImageView
+                android:id="@+id/imgView6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_information_48"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/app_about_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/about"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
